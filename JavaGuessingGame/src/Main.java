@@ -55,16 +55,16 @@ public class Main {
                     }
                 }
 
-                if(attemptCount > MAX_RANGE) {
+                if(attemptCount == MAX_RANGE) {
                     break;
                 }
             }
 
-            if(attemptCount <= ALLOWED_ATTEMPTS) {
+            if(attemptCount <= ALLOWED_ATTEMPTS) { //we got the answer within our target number of attempts
                 System.out.println("I Win! I guessed your number in " + attemptCount + " attempts!");
-            } else if(correct) {
-                System.out.println("Bummer, you win. It took me " + attemptCount + " to get your number");
-            } else {
+            } else if(correct) { //we got the right number, but not in the target number of attempts
+                System.out.println("Bummer, you win. It took me " + attemptCount + " guesses to get your number");
+            } else { //We have guessed every single number in the range and still haven't guess it
                 System.out.println("I think you cheated. I have guessed every number in the valid range!");
             }
 
