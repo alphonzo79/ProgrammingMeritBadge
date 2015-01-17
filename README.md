@@ -1,0 +1,1 @@
+This repo holds a couple of code samples for use in teaching the Programming Merit Badge for the Boy Scouts. Feel free to use the samples for any use. Even though the project itself is more involved than just Hello World, the implementation is intentional simple -- certain best practices have been ignored for the sake of absolute beginners.
